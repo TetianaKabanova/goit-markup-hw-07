@@ -1,0 +1,22 @@
+.start-logo,
+.end-logo,
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.end-logo {
+  color: var(--logo-color);
+}
+
+.footer-logo {
+  color: var(--main-color);
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}

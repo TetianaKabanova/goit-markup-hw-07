@@ -1,0 +1,54 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-mail,
+.contact-phone-number {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: currentColor;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  column-gap: 30px;
+}
+
+.contact-mail-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.contact-mail:hover .contact-mail-icon,
+.contact-mail:focus .contact-mail-icon {
+  fill: var(--accent-color);
+}
+.contact-phone-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.contact-phone-number:hover .contact-phone-icon,
+.contact-phone-number:focus .contact-phone-icon {
+  fill: var(--accent-color);
+}
