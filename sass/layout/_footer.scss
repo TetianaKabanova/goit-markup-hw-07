@@ -1,5 +1,6 @@
-.footer-address,
-.footer-contacts {
+.footer-list__address,
+.footer-list__email,
+.footer-list__tel {
   line-height: 1.71;
   color: var(--main-color);
   transition: color var(--transition-dur-and-func);
@@ -9,7 +10,8 @@
     color: var(--accent-color);
   }
 }
-.footer-contacts {
+.footer-list__email,
+.footer-list__tel {
   color: var(--footer-contacts-text);
 }
 
@@ -28,11 +30,13 @@
   align-items: baseline;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer-social-links-title {
+.footer-social-links__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -41,11 +45,16 @@
   margin-bottom: 20px;
 }
 
-.footer-social-list-icon {
+.footer-social-list__icon {
   width: 20px;
   height: 20px;
   fill: var(--main-color);
   transition: fill var(--transition-dur-and-func);
+
+  .footer-social-list__link:hover &,
+  .footer-social-list__link:focus & {
+    fill: var(--main-color);
+  }
 }
 
 .footer-social-list {
@@ -55,10 +64,8 @@
   margin-top: 20px;
 }
 
-.footer-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer-social-list__link {
+  @extend %align;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -71,35 +78,30 @@
   }
 }
 
-.footer-social-list-link:hover .footer-social-list-icon,
-.footer-social-list-link:focus .footer-social-list-icon {
-  fill: var(--main-color);
-}
-
 .footer-social-links {
   margin-left: 70px;
 }
 
-.footer-subscribe-title {
+.subscribe-form__title {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
-.footer-subscribe-section {
+.subscribe-section {
   display: block;
   margin-left: 93px;
   width: 570px;
   height: 86px;
 }
 
-.footer-form-field {
+.subscribe-form__field {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-form-input {
+.subscribe-form__input {
   width: 100%;
   height: 50px;
   border-radius: 4px;
@@ -115,7 +117,7 @@
   }
 }
 
-.footer-form-submit-btn {
+.subscribe-btn {
   display: flex;
   column-gap: 10px;
   justify-content: center;

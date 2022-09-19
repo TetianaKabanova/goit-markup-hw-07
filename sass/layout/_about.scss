@@ -2,22 +2,20 @@
   padding-top: 94px;
 }
 
-.boxes {
+.box {
   display: flex;
   gap: 30px;
 }
 
-.box-item {
+.box__item {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
   overflow: hidden;
   z-index: 100;
 }
 
-.about-item-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.box__overlay {
+  @extend %align;
   position: absolute;
   font-family: var(--primary-font);
   font-weight: 700;

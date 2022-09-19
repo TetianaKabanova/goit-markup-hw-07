@@ -1,17 +1,17 @@
-.start-logo,
-.end-logo,
-.footer-logo {
+.logo__first-part,
+.logo__second-part {
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
+  @include font($fs: 26px, $fw: 700, $lh: 31px, $ls: 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.end-logo {
+.logo__second-part {
   color: var(--logo-color);
 }
 
-.footer-logo {
+.logo__second-part_inverse {
   color: var(--main-color);
 }
 

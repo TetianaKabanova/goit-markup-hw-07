@@ -1,14 +1,10 @@
 .clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
   column-gap: 30px;
 }
 
-.clients-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.clients-list__item {
+  @extend %align;
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -22,7 +18,7 @@
     fill: var(--accent-color);
   }
 }
-.clients-list-link {
+.clients-list__link {
   fill: var(--social-icon-color-team);
   transition: fill var(--transition-dur-and-func);
 
@@ -31,11 +27,11 @@
     fill: var(--accent-color);
   }
 }
-.clients-list-icon {
+.clients-list__icon {
   transition: fill var(--transition-dur-and-func);
-}
 
-.clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon {
-  fill: var(--accent-color);
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    fill: var(--accent-color);
+  }
 }
