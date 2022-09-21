@@ -21,3 +21,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
 }
+
+.close-modal-btn__icon {
+  .close-modal-btn:hover &,
+  .close-modal-btn:focus & {
+    fill: var(--accent-color);
+  }
+}

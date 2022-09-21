@@ -1,5 +1,6 @@
-.logo__first-part,
-.logo__second-part {
+.logo__first-part-logo,
+.logo__second-part-logo,
+.footer-section__logo {
   font-family: var(--secondary-font);
   @include font($fs: 26px, $fw: 700, $lh: 31px, $ls: 0.03em);
   // font-weight: 700;
@@ -7,15 +8,18 @@
   // letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo__second-part {
+.logo__second-part-logo {
   color: var(--logo-color);
 }
 
-.logo__second-part_inverse {
+.footer-section__logo {
   color: var(--main-color);
 }
 
 .logo {
+}
+
+.page-navigation__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
